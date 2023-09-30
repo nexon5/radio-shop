@@ -12,6 +12,10 @@ import { ProductsComponent } from './componets/products/products.component';
 import { ProductComponent } from './componets/product/product.component';
 import { BasketComponent } from './componets/basket/basket.component';
 import { MainComponent } from './componets/main/main.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -28,7 +32,11 @@ import { MainComponent } from './componets/main/main.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
